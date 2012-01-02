@@ -7,15 +7,19 @@ Local setup:
    Install MySQLdb
 
    Troubleshooting:
-   - After MySQLdb is downloaded, if running "python setup.py build" gives you error
-     regarding to "setuptools", that means you need to install it.
+   - If running "python setup.py build" gives you error regarding to
+     "setuptools", that means you need to install it.
      More details on http://pypi.python.org/pypi/setuptools
      After download it, run the egg file. Ex: sh setuptools-0.6c11-py2.7.egg
 
-   - After MySQLdb is downloaded, if running "python setup.py build" gives you error
-     regarding to "mysql_config", you might have to make sure that mysql_config.path
+   - If running "python setup.py build" gives you error regarding to
+     "mysql_config", you might have to make sure that mysql_config.path
      is the correct path where mysql_config is located in setup_posix.py file.
 
-   - After MySQLdb is downloaded, if running "python setup.py build" gives you error
-     regarding to missing gcc-4.2, that means you need to install it, it should be  
+   - If running "python setup.py build" gives you error regarding to
+     missing gcc-4.2, that means you need to install it, it should be  
      included in Xcode.
+
+   - If running "python setup.py build" gives you error regarding to "Library not
+     loaded: libmysqlclient.18.dylib", do:
+     export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
