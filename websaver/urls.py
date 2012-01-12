@@ -1,10 +1,12 @@
 from django.conf.urls import patterns, include, url
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+from django.contrib import admin
+admin.autodiscover()
 
 urlpatterns = patterns('',
+  url(r'^signup/$', 'users.views.registration.register'),
+  url(r'^$', 'users.views.registration.index'),
     # Examples:
     # url(r'^$', 'websaver.views.home', name='home'),
     # url(r'^websaver/', include('websaver.foo.urls')),
