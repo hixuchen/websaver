@@ -56,6 +56,3 @@ class UserRegistrationForm(forms.Form):
     if len(email_addr) > 0:
       self._errors["email"] = self.error_class([self.DUPLICATED_EMAIL_ERROR_MSG])
       del self.cleaned_data["email"]
-
-  def haha(self):
-    return "<h1>jj<h1>"
