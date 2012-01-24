@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>untitled</title>
+  <meta name="generator" content="TextMate http://macromates.com/">
+  <meta name="author" content="xuchen81">
+  <link href="{{ STATIC_URL }}stylesheets/base.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/base.js"></script>
+  <!-- Date: 2012-01-08 -->
+</head>
+<body>
+<div id="headContainer">
+  <div id="header">
+    <div id="logo">      
+      <a href=""><img src="{{ STATIC_URL }}img/logo_dipoll.png"/></a>
+    </div>
+    <div id="headernav">
+      <div id="saveweb">Save a Web</div>
+      <form method="post" action="">
+        <input type="text" name="siteaddr" id="webbox" value="Enter the page link you want to save." />
+        <input type="submit" name="siteaddr" id="savewebbtn" class="button blue" value="Save" />
+      </form>
+      <script> $('#saveweb').click(function() {
+	  alert('Handler for .click() called.');
+	}); </script>
+    </div>
+  </div>
+</div>
+<div id="categoryContainer">
+  <div id="topcategories">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Today</a></li>
+      <li><a href="">Entertainment</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Fashion</a></li>
+      <li><a href="">Sports</a></li>
+      <li><a href="">Tech</a></li>
+      <li><a href="">Music</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="registrationBox">
+    
+    <div id="signup">
+      <form id="signupform" action="/" method="post">{% csrf_token %}
+        {{ form.non_field_errors }}
+        <table id="signupformtable">
+	      <tbody>
+        {% for field in form %}
+          <tr class="fieldWrapper">
+	        <td>{{ field.label_tag }}</td>
+            <td>{{ field }} {{field.errors}}</td>
+          </tr>
+        {% endfor %}
+          </tbody>
+        </table>
+        <p><input type="submit" value="Sign up" /></p>
+      </form>
+    </div>
+    <div id="loginform">ee</div>
+</div>
+
+</body>
+</html>

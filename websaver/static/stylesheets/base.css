@@ -1,0 +1,235 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, verdana,sans-serif;
+}
+
+div {
+  font-family: arial, verdana, sans-serif;
+  font-size: 12px;
+  color: #828282;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0 none;
+}
+
+input {
+  color: #828282;
+  outline: none;
+}
+
+textarea {
+  font-family: arial, verdana, sans-serif;
+  font-size: 12px;
+  color: #828282;
+}
+
+div#logo {
+  float: left;
+  width: 110px;
+}
+
+div#page {
+  width: 930px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+div#headerContainer {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+div#header {
+  width: 930px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+}
+
+div#headernav {
+  height: 30px;
+  width: 765px;
+  float: right;
+  line-height: 30px;
+}
+
+div#saveweb {
+  float: left;
+  text-align: left;
+  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+input#webbox {
+  float: left;
+  margin: 0px 10px;
+  padding: 5px;
+  font-size: 14px;
+  width: 270px;
+  height: 18px;
+  line-height: 22px;
+  border: 1px solid #c8c8c8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input#savewebbtn {
+  float: left;
+  padding-bottom: 2px;
+  height: 30px;
+  width: 64px;
+  margin: 0px;
+}
+
+.blue {
+  color: white;
+  border-color: #748DCC #748DCC #889DD1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6d8dde), to(#849cdb));
+  background: -moz-linear-gradient(top, #6d8dde, #849cdb);
+}
+
+.blue:hover {
+  color: white;
+  border-color: #748DCC #748DCC #889DD1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5c80db), to(#7994db));
+  background: -moz-linear-gradient(top, #5c80db, #7994db);
+}
+
+.button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: tahoma, Arial, Helvetica, sans-serif;
+  padding: 0 13px;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div#categoryContainer {
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #E6E6E6;
+  border-collapse: collapse;
+  border-top: 1px solid #E6E6E6;
+  width: 100%;
+}
+
+div#topcategories {
+  background-color: #F5F5F5;
+  clear: both;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 7px;
+  padding-right: 20px;
+  width: 943px;
+}
+div#topcategories ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+div#topcategories ul li {
+  display: block;
+  float: left;
+  height: 15px;
+  margin: 0;
+  padding: 10px 0;
+}
+div#topcategories ul li a {
+  color: #828282;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  padding: 10px 13px;
+  text-decoration: none;
+}
+div#topcategories ul li a:hover {
+  background-color: #e6e6e6;
+}
+
+div#registrationBox {
+  # background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#565547));
+  #  background: -moz-linear-gradient(top, #3c3c3c, #565547);
+  width: 100%;
+}
+
+div#registrationBox {
+  # background-color: #828282;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px;
+  width: 930px;
+}
+div#registrationBox #loginform {
+  width: 450px;
+  height: 300px;
+  float: left;
+}
+div#registrationBox #signup {
+  float: left;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #C8C8C8;
+}
+div#registrationBox #signup table {
+  border-collapse: separate;
+  border-spacing: 10px, 0px;
+}
+div#registrationBox #signup table td {
+  padding: 5px;
+  vertical-align: top;
+}
+div#registrationBox #signup table td label {
+  font-size: 14px;
+  line-height: 26px;
+}
+div#registrationBox #signup .fieldWrapper input {
+  font-size: 12px;
+  width: 200px;
+  border: 1px solid #c8c8c8;
+  padding: 5px 5px;
+  cursor: text;
+  # -webkit-border-radius: 5px;
+  # -moz-border-radius: 5px;
+  # border-radius: 5px;
+}
+div#registrationBox #signup .fieldWrapper input:focus {
+  border: 1px solid #ff9900;
+}
+div#registrationBox #signup .fieldWrapper input.txt {
+  vertical-align: middle;
+}
+div#registrationBox #signup .fieldWrapper .errorlist {
+  color: red;
+  margin: 0px;
+  font-size: 11px;
+}
+div#registrationBox #signup .fieldWrapper ul {
+  margin: 0;
+  padding: 0;
+}
+div#registrationBox #signup .fieldWrapper li {
+  display: block;
+  margin: 0px;
+}
